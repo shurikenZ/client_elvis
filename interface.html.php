@@ -76,12 +76,13 @@
 
 </div>
 
+<!--
 <div id="divDebug" class="divButtons" style="text-align:center;">
 	<div>
 		<button type="button" id="btnStopIntervallCalls" style="clear:both;">DEBUG Stop Interval Calls</button>
 	</div>
 </div>
-
+-->
 
 <div id="divInstr">
 <!-- Maybe rename to FGEN_divInstr -->
