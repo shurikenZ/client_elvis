@@ -125,11 +125,11 @@
 	</select>
 	</p>-->
 	<p>
-	<label class="field">Amplitude:</label>
+	<label class="field">Amplitude[V]:</label>
 	<input type="number" id="FGEN_amp" value="2" step="any" min="0" max="10"/>
 	</p>
 	<p>
-	<label class="field">Offset:</label>
+	<label class="field">Offset[V]:</label>
 	<input type="number" id="FGEN_off" value="0" step="any" min="0" max="5"/>
 	</p>
 	<div id="msg_FGEN_OutOfRange" class="messagebox error" style="display:none;">Amplitude and Offset are not allowed to exceed 10V.</div>
@@ -151,7 +151,7 @@
 	<input id="SCOPE_rate"/>
 	</p>-->
 	<p>
-	<label class="field">Sampling time:</label>
+	<label class="field">Sampling time[s]:</label>
 	<input type="number" id="SCOPE_time" value="0.50" step="0.05" min="0.05" max="5"/>
 	</p>
 	<div id="msg_SCOPE_maxRecLength" class="messagebox error" style="display:none;">Sampling Time limit reached, due to the high FGEN frequency.</div>
