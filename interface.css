@@ -1,0 +1,179 @@
+
+
+
+/* NEW ELVIS */
+
+body {
+	background-color: lightgrey;
+	margin: 0;
+}
+
+#header {
+	background-color: #333;
+	color: #FFF;
+	margin: auto 0 20px auto;
+	padding: 20px;
+}
+#headerInner {
+	margin: 0 auto;
+	width: 500px;
+}
+#selLang {
+	float: right;
+}
+
+#divCanvas {
+	margin: 20px auto;
+	text-align: center;
+}
+#canvasSetup {
+	border: 1px solid #000;
+	background-color: #FFF;
+}
+
+#divInstrFGEN, #divInstrSCOPE{
+	margin: 0px auto 20px;
+	width: 600px;
+}
+
+#divChart {
+	border: 1px solid #000;
+	text-align: center;
+	margin: 30px auto;
+	width: 600px;
+}
+
+fieldset {
+	/*width: 600px;*/
+}
+legend {
+	font-size: 20px;
+}
+label.field {
+	text-align: right;
+	width: 150px;
+	float: left;
+	font-weight: bold;
+}
+input#FGEN_inFreq {
+	width: 170px;
+}
+#divInstrFGEN input, #divInstrFGEN select, #divInstrSCOPE input, #divInstrSCOPE select{
+	width: 350px;
+	float: left;
+}
+#divInstrFGEN p, #divInstrSCOPE p {
+	height: 20px;
+}
+.divButtons{
+	margin: 20px auto;
+	width: 420px;
+}
+
+.progress{
+	float:right;
+	height: 20px;
+	margin-top: 1px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: #F5F5F5;
+	border: 1px solid #BBB;
+	/*border-radius: 4px;*/
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+	white-space: normal;
+	min-width: 250px;
+}
+
+.progressbar {
+	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.15) inset;
+	transition: width 0.6s ease 0s;
+	float: left;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #000;
+	text-align: center;
+	animation: 2s linear 0s normal none infinite running mymove;
+	animation: 2s linear 0s normal none infinite running mymove;
+	transition: width 0.6s ease 0s;
+	background-color: #5CB85C;
+	background-size: 40px 40px;
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+	/*text-shadow: 1px 1px #FFF;*/
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {from{background-position:40px 0}to{background-position:0 0}}
+
+/* Standard syntax */
+@keyframes mymove {from{background-position:40px 0}to{background-position:0 0}}
+
+fieldset p {
+	clear: both;
+}
+
+
+/* Blackbody Client General - not used */
+body {
+	font-family: "Trebuchet MS", "Helvetica", "Arial",  "Verdana", "sans-serif";
+	font-size: 100%;
+}
+.clear {
+	clear:left;
+}
+.lbl_Progressbar {
+	position: absolute;
+	left: 5%;
+	top: 4px;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff;
+}
+.ui-progressbar {
+	position: relative;
+	width: 250px;
+	float: left;
+}
+.ui-progressbar-value {
+	background-color: rgb(134, 232, 122);
+}
+.ui-menu { position: absolute; width: 200px; }
+
+
+
+/* Message Boxes */
+.messagebox {
+	width: auto;
+	border: 1px solid #EEE;
+	background-color: #F6F6F6;
+	color: #000;
+	padding: 0.5em;
+	margin-bottom: 0.75em;
+	overflow: hidden;
+	/*display: block;
+	float: none;
+	clear: both;*/
+}
+
+.error {
+	border-color: #EAA;
+	padding-left: 26px;
+	background: url('img/icon-error.png') no-repeat scroll 5px 0.6em #FBB;
+}
+
+.info {
+	border-color: #EEE;
+	padding-left: 26px;
+	background: url('img/icon-info.png') no-repeat scroll 5px 0.6em #F9F9F9;
+}
+
+.success {
+	border-color: #AEA;
+	padding-left: 26px;
+	background: url('img/icon-success.png') no-repeat scroll 5px 0.6em #BFB;
+}
+
+.warning {
+	border-color: #EEA;
+	padding-left: 26px;
+	background: url('img/icon-warning.png') no-repeat scroll 5px 0.6em #FFB;
+}
