@@ -152,8 +152,8 @@ if (is_soap_fault($SOAPresp)) {
 	require_once(dirname(__FILE__).'/XMLSerializer.inc.php');
 
 	
-	$myLogFile = fopen(dirname(__FILE__).'/LogFile.txt','w') or DIE('Unable to open file!');
-	fwrite($myLogFile, '$prop:' . PHP_EOL . $prop . PHP_EOL . PHP_EOL);
+	//$myLogFile = fopen(dirname(__FILE__).'/LogFile.txt','w') or DIE('Unable to open file!');
+	//fwrite($myLogFile, '$prop:' . PHP_EOL . $prop . PHP_EOL . PHP_EOL);
 
 
 	//Check if var is object
@@ -170,7 +170,7 @@ if (is_soap_fault($SOAPresp)) {
 		$std_class = json_decode(json_encode($SOAPresp->$prop));
 		$xml = $xml_generator->generateValidXmlFromObj($std_class);
 		echo $xml;
-		fwrite($myLogFile, 'var_dump($SOAPresp->$prop):' . PHP_EOL . $xml . PHP_EOL);
+		//fwrite($myLogFile, 'var_dump($SOAPresp->$prop):' . PHP_EOL . $xml . PHP_EOL);
 		//---------------
 		
 		//---------------
@@ -178,7 +178,7 @@ if (is_soap_fault($SOAPresp)) {
 	} else if( is_string($SOAPresp->$prop) ) {
 		$txt = $SOAPresp->$prop;
 		echo $txt;
-		fwrite($myLogFile, 'var_dump($SOAPresp->$prop):' . PHP_EOL . $txt . PHP_EOL);
+		//fwrite($myLogFile, 'var_dump($SOAPresp->$prop):' . PHP_EOL . $txt . PHP_EOL);
 	}
 
 
@@ -201,7 +201,7 @@ if (is_soap_fault($SOAPresp)) {
 
 	
 	//Close File
-	fclose($myLogFile);
+	//fclose($myLogFile);
 	
 }
 

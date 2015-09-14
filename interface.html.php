@@ -125,7 +125,7 @@
 	</p>-->
 	<p>
 	<label class="field">Amplitude:</label>
-	<input type="number" id="FGEN_amp" value="5" step="any" min="0" max="10"/>
+	<input type="number" id="FGEN_amp" value="2" step="any" min="0" max="10"/>
 	</p>
 	<p>
 	<label class="field">Offset:</label>
