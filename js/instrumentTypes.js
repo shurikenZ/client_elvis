@@ -48,6 +48,7 @@ instrumentTypes.FGEN.fcn.init = function(name) {
 	console.log('_x_clickFGEN - name: ' + name);//this is a placeholder
 	//Show
 	$('#divInstrFGEN').show();
+	window.location.hash = 'divInstrFGEN';
 };
 
 instrumentTypes.FGEN.fcn.clickEvent = function() {
@@ -108,11 +109,13 @@ instrumentTypes.FGEN.fcn.clickEvent = function() {
 		console.log(this.values);
 		
 		$('#divInstrFGEN').show().hide();
+		window.location.hash = 'divSetupMenu';
 	}.bind(this));
 
 	//CANCEL
 	$('#FGEN_btnCancel').click(function(event){
 		$('#divInstrFGEN').show().hide();
+		window.location.hash = 'divSetupMenu';
 	});
 };
 
@@ -129,6 +132,7 @@ instrumentTypes.SCOPE.fcn.init = function(name) {
 	console.log('_x_clickSCOPE - name: ' + name);//this is a placeholder
 	//Show
 	$('#divInstrSCOPE').show();
+	window.location.hash = 'divInstrSCOPE';
 };
 
 instrumentTypes.SCOPE.fcn.clickEvent = function(name) {
@@ -147,9 +151,18 @@ instrumentTypes.SCOPE.fcn.clickEvent = function(name) {
 		console.log(this.values);
 		
 		$('#divInstrSCOPE').show().hide();
+		window.location.hash = 'divSetupMenu';
 
 	}.bind(this));	
+
+	//CANCEL
+	$('#SCOPE_btnCancel').click(function(event){
+		$('#divInstrSCOPE').show().hide();
+		window.location.hash = 'divSetupMenu';
+	});
+
 }
+
 
 /*/SCOPE
 instrumentTypes.SCOPE.fcn = function(name) {
