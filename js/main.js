@@ -35,6 +35,22 @@ function delMsg(id) {
 //QUERY DOCUMENT READY
 $(function(){
 
+
+
+//Set pre-defined values from input fields and dropdown (for the Young Science Award)
+//FGEN
+instrumentTypes.FGEN.fcn.values.waveformType = $('#FGEN_selWaveformType').val();
+instrumentTypes.FGEN.fcn.values.frequency = parseFloat($('#FGEN_freq').val());//getFreq();
+instrumentTypes.FGEN.fcn.values.amplitude = parseFloat( ($('#FGEN_amp').val() === '' )? 1 : $('#FGEN_amp').val() );
+instrumentTypes.FGEN.fcn.values.offset = parseFloat( ($('#FGEN_off').val() === '' )? 0 : $('#FGEN_off').val() );
+instrumentTypes.FGEN.fcn.set = true;
+//SCOPE
+instrumentTypes.SCOPE.fcn.values.samplingRate = parseFloat(document.getElementById('FGEN_freq').value)*10;
+instrumentTypes.SCOPE.fcn.values.samplingTime = parseFloat(document.getElementById('SCOPE_time').value)
+instrumentTypes.SCOPE.fcn.set = true;
+
+
+
 	//FGEN
 	function checkFgenAmpRange() {
 		var amp = parseFloat(document.getElementById('FGEN_amp').value);
