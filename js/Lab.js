@@ -223,6 +223,8 @@ Lab.prototype.ajaxCall = function(operation,xmlRoot,parameters) {
 			//Draw Highchart
 			myHighchart.series = this.setExpResults();
 			$('#highchart').highcharts(myHighchart);
+			//Scroll to chart
+			window.location.hash = 'divChart';
 			//Allow to start next exp
 			this.disableSubmit = false;
 			//Set Layer
